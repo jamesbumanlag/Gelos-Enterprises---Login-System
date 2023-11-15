@@ -311,10 +311,6 @@ def forgot_password_option(username,sec_question,sec_answer):
         main()
 
 
-
-
-
-
 # Register account function or adding new user to the program
 def register_account():
     while True:
@@ -354,7 +350,6 @@ def title(subtitle):
     print('Student Id : 00000000')
     print('Email      : jamesian.bumanlag@studytafensw.edu.au')
 
-    
     print()
     print(f'Gelos Enterprises - {date_now}')
     print()
@@ -389,8 +384,6 @@ def random_password():
     return gen_password
 
 
-
-    
 # Main program - function
 def main():
     
