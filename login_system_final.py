@@ -315,7 +315,7 @@ def forgot_password_option(username,sec_question,sec_answer):
 
 
 
-# Register account function
+# Register account function or adding new user to the program
 def register_account():
     while True:
         title('Register Account')
@@ -350,6 +350,12 @@ def timedate():
 def title(subtitle):
     date_now = timedate()
     clear_screen()
+    print('Programmer : James Bumanlag')
+    print('Student Id : 00000000')
+    print('Email      : jamesian.bumanlag@studytafensw.edu.au')
+
+    
+    print()
     print(f'Gelos Enterprises - {date_now}')
     print()
     print(f'{subtitle}\n--------------------')
@@ -476,7 +482,7 @@ def main():
             title('Forgot Password')
             
             username = input('Username: ')
-            if check_username(username): 
+            if check_username(username): # check if username is already been used
                 title('Forgot Password')
                 print(f'Username: {username}')
 
@@ -485,7 +491,7 @@ def main():
 
                 data = validate_sec_question(username,sec_question,sec_answer)
 
-                if data:
+                if data: # check if data is true
                     print()
                     forgot_password_option(username,sec_question,sec_answer)
 
